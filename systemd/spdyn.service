@@ -1,0 +1,11 @@
+[Unit]
+Description=Submit IP to SPDyn
+After=network.target
+
+[Service]
+Type=simple
+User=<USER>
+WorkingDirectory=<WORKDIR>
+Environment="SPDYNTOKEN=<SPDYN_TOKEN>"
+Environment="SPDYNHOSTNAME=<SPDYN_HOSTNAME>"
+ExecStart=/usr/local/bin/spdyn
