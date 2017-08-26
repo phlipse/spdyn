@@ -49,7 +49,7 @@ If you are on Linux and you want to use systemd instead of cron, simply copy the
 # copy service and timer file to systemd folder
 $ sudo cp spdyn.service spdyn.timer /etc/systemd/system/
 
-# token is sensitive information and should only be accessible by root
+# token is a sensitive information and should only be accessible by root
 $ sudo chmod 600 /etc/systemd/system/spdyn.*
 
 # enable timer
@@ -67,7 +67,7 @@ $ sudo systemctl start spdyn.service
 $ sudo journalctl -u spdyn
 ```
 
-**Change username, working directory and path to executable to your needs.**
+**Change username, working directory and path to executable in *spdyn.service* file to your needs.**
 
 ## License
 
